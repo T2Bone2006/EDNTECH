@@ -1,4 +1,4 @@
-import { Audiowide, Inter } from "@next/font/google"
+import { Audiowide, Inter } from "next/font/google"
 
 export const inter = Inter({
     subsets: ["latin"],
