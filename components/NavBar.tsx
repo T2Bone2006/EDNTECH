@@ -14,7 +14,7 @@ const NavBar = (props: Props) => {
       whileInView={{opacity: 1}}
       transition={{duration: 0.5}}
       >
-      <div className="fixed top-0 rounded-full w-full h-[40px] -translate-y-[20px] bg-brand-dark-blue blur-[50px]" ></div>
+      <div className="absolute top-0 rounded-full w-full h-[40px] -translate-y-[20px] bg-brand-dark-blue blur-[50px]" ></div>
         <motion.h1 className="logo font-audiowide text-white  text-[24px] pl-3 z-[2]"
           initial={{y: -100}}
           animate={{ y : 0 }}
