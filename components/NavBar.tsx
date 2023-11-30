@@ -9,7 +9,7 @@ type Props = {}
 const NavBar = (props: Props) => {
   return (
     
-    <motion.div className="w-full bg-brand-deep-blue  pt-3 flex flex-row justify-between fixed top-0 z-50"
+    <motion.div className="w-full bg-brand-deep-blue  pt-3 flex flex-row justify-between"
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{duration: 0.5}}
