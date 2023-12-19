@@ -1,0 +1,12 @@
+@import "@/styles/variables.scss";
+
+*{
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+body{
+    
+    margin: 0;
+    background-color: #01000E;
+}

@@ -1,0 +1,99 @@
+@import "@/styles/variables.scss";
+.heroSection{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    color: white;
+    padding-left: 10%;
+    overflow: hidden;
+    position: relative;
+    margin-top: -96px;
+    .heroText{
+        z-index: 2;
+        max-width: 40%;
+        
+        .glowText{
+            position: relative;
+            background: $standard-gradient;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .heroTitle{
+            font-size: 60px;
+            font-weight: 400;
+        }
+        .heroTitleSmall{
+            display: none;
+            font-size: 48px;
+            font-weight: 400;
+        }
+        .heroDesc{
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+    .pinkCircle{
+        height: 800px;
+        width: 800px;
+        position: absolute;
+        right: -100px;
+        bottom: 0;
+        border-radius: 100%;
+        background: linear-gradient(211deg, #FF00C1 18.38%, #00FFF9 81.24%);
+        filter: blur(10px);
+    }
+    .blueCircle{
+        border-radius: 100%;
+        position: absolute;
+        left: 10px;
+        bottom: -200px;
+        height: 400px;
+        width: 400px;
+        background: linear-gradient(90deg, #4900FF 23.18%, #00FFF9 70.22%);
+        filter: blur(10px);
+    }
+}
+
+@media (max-width: 1350px) {
+    .heroSection{   
+        .heroText{
+            .heroTitle{
+                font-size: 48px;
+            }
+            .heroDesc{
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media (max-width: 1024px){
+    .heroSection{
+        padding: 0;
+        justify-content: center;
+        .heroText{
+            max-width: 60%;
+            text-align: center;
+            .heroTitle{
+                display: none;
+            }
+            .heroTitleSmall{
+                display: block;
+            }
+            .heroDesc{
+                display: none;
+            }
+        }
+        .pinkCircle{
+            width: 300px;
+            height: 300px;
+            top: 100px;
+            left: -100px;
+            transform: rotate(90deg);
+        }
+        .blueCircle{
+            left: auto;
+            right: -100px;
+            transform: rotate(-90deg);
+        }
+    }
+}
