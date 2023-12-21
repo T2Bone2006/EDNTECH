@@ -1,19 +1,72 @@
 @import "@/styles/variables.scss";
 
+.offerItem{
+    color: white;
+    // width: 20vw;
+    aspect-ratio: 1;
+    // min-width: 331px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7vw;
+    .offerButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:  8px 16px;
+        border: none;
+        color: white;
+        font-size: 28px;
+        background-color: $pink;
+        width: fit-content;
+        border-radius: 25px;
+        svg{
+            rotate: -45deg;
+            path{
+                fill: white;
+            }
+        }
+    }
+    .offerText{
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        justify-content: space-between;
+        .offerTitle{
+            color: $pink;
+            // text-shadow:0px 0px 10px $pink;
+            font-size: 30px;
+        }
+        .offerDesc{
+            text-align: start;
+            font-weight: 300;
+            line-height: 140%;
+            letter-spacing: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5vw;
+        }
+    }
+    
+}
+
 .offerSection{
     position: relative;
     background-color: $deep-blue;
     .offerTop,.offerBottom{
+        display: inline-block;
         overflow: auto;
-        svg{
-            width: 100vw;
-        }
+        // svg{
+        //     width: 100vw;
+        
         position: absolute;
-        bottom: 100%;
+        // bottom: 100%;
         background-color: transparent;
     }
     .offerTop{
-        bottom: 100%;
+        bottom: calc(100% - 1px);
     }
     .offerBottom{
         top: 100%;
@@ -44,34 +97,7 @@
             display: grid;
             gap: 100px;
             grid-template-columns: repeat(auto-fit, minmax( 331px, 1fr));
-            .offerItem{
-                color: white;
-                // width: 20vw;
-                aspect-ratio: 1;
-                // min-width: 331px;
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 48px;
-                .offerText{
-                    display: flex;
-                    flex-direction: column;
-                    gap: 48px;
-                    justify-content: space-between;
-                    .offerTitle{
-                        color: $pink;
-                        // text-shadow:0px 0px 10px $pink;
-                        font-size: 30px;
-                    }
-                    .offerDesc{
-                        text-align: start;
-                        font-weight: 300;
-                        line-height: 140%;
-                        letter-spacing: 2%;
-                    }
-                }
-            }
+            
         }
     }
 }
@@ -91,34 +117,41 @@
                     font-size: 48px;
                 }
             }
-            .offerMenu{
-                .offerItem{
-                    min-width: none;
-                }
-            }
         }
+    }
+    .offerItem{
+        min-width: none;
     }
 }
 @media (max-width: 845px){
     .offerSection{
         .offers{
-            .headingDiv{
-                .heading{
-
-                }
+            .heading{
+                font-size: 10vw;
             }
-            .offerMenu{
-                .offerItem{
-                    flex-direction: row;
-                    width: 75vw;
-                    min-width: none;
-                    .offerText{
-                        .offerTitle{
-                            text-align: start;
-                        }
-                    }
-                }
+        }
+    }
+    .offerItem{
+        flex-direction: row;
+        width: 100%;
+        min-width: none;
+        .offerText{
+            .offerTitle{
+                text-align: center;
+                font-size: 8vw;
             }
+            .offerDesc{
+                text-align: center;
+            }
+        }
+        .offerButton{
+            max-width: 50px;
+            .buttonText{
+                display: none;
+            }
+            aspect-ratio: 1;
+            height: auto;
+            border-radius: 100%;
         }
     }
 }

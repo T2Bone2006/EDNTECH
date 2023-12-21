@@ -40,6 +40,7 @@ const NavBar = () => {
                     >
                         <div className={styles.closeButton} onClick={toggleMenu}>X</div>
                         <div className={styles.menuList}>
+                            <div className={styles.menuItem}>Home</div>
                             <div className={styles.menuItem}>SMMA</div>
                             <div className={styles.menuItem}>Web Design</div>
                             <div className={styles.menuItem}>Item 3</div>
