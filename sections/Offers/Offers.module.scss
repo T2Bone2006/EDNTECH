@@ -2,33 +2,123 @@
 
 .offerSection{
     position: relative;
-    .offerTop{
-        max-width: 100%;
+    background-color: $deep-blue;
+    .offerTop,.offerBottom{
+        overflow: auto;
+        svg{
+            width: 100vw;
+        }
         position: absolute;
-        bottom: 0;
+        bottom: 100%;
         background-color: transparent;
     }
+    .offerTop{
+        bottom: 100%;
+    }
+    .offerBottom{
+        top: 100%;
+    }
     .offers{
-        background-color: $deep-blue;
-        .headingDiv{
-            width: 100%;
-            display: flex;
-            justify-content: center;
+        padding: 0 5%;
+        padding-top: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
             .heading{
-                font-size: 74px;
+                text-align: center;
+                font-size: 68px;
                 font-weight: 500;
                 margin: 0;
                 position: relative;
                 background: $standard-gradient;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
+        }
+        .offerMenu{
+            width: fit-content;
+            margin-top: 96px;
+            // display: flex;
+            // flex-wrap: wrap;
+            // justify-content: center;
+            // gap: 100px;
+            display: grid;
+            gap: 100px;
+            grid-template-columns: repeat(auto-fit, minmax( 331px, 1fr));
+            .offerItem{
+                color: white;
+                // width: 20vw;
+                aspect-ratio: 1;
+                // min-width: 331px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 48px;
+                .offerText{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 48px;
+                    justify-content: space-between;
+                    .offerTitle{
+                        color: $pink;
+                        // text-shadow:0px 0px 10px $pink;
+                        font-size: 30px;
+                    }
+                    .offerDesc{
+                        text-align: start;
+                        font-weight: 300;
+                        line-height: 140%;
+                        letter-spacing: 2%;
+                    }
+                }
             }
         }
     }
 }
 
 @media (max-width: 1024px){
-    .offerTop{
-        display: none;
+    .offerSection{
+
+        .offerTop{
+            display: none;
+        }
+        .offerBottom{
+            display: none;
+        }
+        .offers{
+            .headingDiv{
+                .heading{
+                    font-size: 48px;
+                }
+            }
+            .offerMenu{
+                .offerItem{
+                    min-width: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 845px){
+    .offerSection{
+        .offers{
+            .headingDiv{
+                .heading{
+
+                }
+            }
+            .offerMenu{
+                .offerItem{
+                    flex-direction: row;
+                    width: 75vw;
+                    min-width: none;
+                    .offerText{
+                        .offerTitle{
+                            text-align: start;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

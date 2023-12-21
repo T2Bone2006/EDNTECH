@@ -33,11 +33,11 @@
         }
     }
     .pinkCircle{
-        height: 800px;
-        width: 800px;
+        height: 45vw;
+        aspect-ratio: 1;
         position: absolute;
         right: -100px;
-        bottom: 0;
+        // bottom: 100px;
         border-radius: 100%;
         background: linear-gradient(211deg, #FF00C1 18.38%, #00FFF9 81.24%);
         filter: blur(10px);
@@ -46,9 +46,9 @@
         border-radius: 100%;
         position: absolute;
         left: 10px;
-        bottom: -200px;
-        height: 400px;
-        width: 400px;
+        bottom: -150px;
+        height: 25vw;
+        aspect-ratio: 1;
         background: linear-gradient(90deg, #4900FF 23.18%, #00FFF9 70.22%);
         filter: blur(10px);
     }
@@ -91,6 +91,7 @@
             transform: rotate(90deg);
         }
         .blueCircle{
+            min-height: 400px;
             left: auto;
             right: -100px;
             transform: rotate(-90deg);
