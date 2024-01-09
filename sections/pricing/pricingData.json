@@ -1,0 +1,43 @@
+[
+    {
+      "title": "Essential",
+      "price": "£150",
+      "description": "Our Essential package is an ideal starting point for businesses making their first foray into the digital world. It includes all the fundamental features needed to establish a solid online presence.",
+      "features": [
+        "Professionally designed website",
+        "Monthly maintenance and updates",
+        "Standard SEO Optimisation",
+        "Mobile-friendly and Responsive Design",
+        "Social Media Integration",
+        "Up to 2 Custom Pages"
+      ]
+    },
+    {
+      "title": "Deluxe",
+      "price": "£250",
+      "description": "The Deluxe package is designed for businesses ready to elevate their online presence. It includes advanced features that provide a more engaging user experience and drive business growth.",
+      "features": [
+        "Includes Everything in the Essential Package",
+        "Enhanced Design and Graphics",
+        "Advanced SEO Optimisation",
+        "Integration with Google Analytics",
+        "Google Maps Integration",
+        "Custom Contact Form",
+        "Up to 3 Custom Pages"
+      ]
+    },
+    {
+      "title": "Premium",
+      "price": "£300+",
+      "description": "The Premium package is our most comprehensive offering, tailored for businesses seeking full control and scalability. It includes a custom Content Management System (CMS) and priority support, designed to boost your online presence and drive business growth.",
+      "features": [
+        "Includes Everything in the Deluxe Package",
+        "Custom Content Management System (CMS)",
+        "Priority Support",
+        "Advanced Analytics and Reporting",
+        "Custom Graphic Design",
+        "Premium SEO Optimisation",
+        "Unlimited Custom Pages"
+          ]
+    }
+]

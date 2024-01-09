@@ -1,0 +1,105 @@
+@import "@/styles/variables.scss";
+
+.pricingItem{
+    .pricingUpper{
+        height: 50%;
+        .pricingItemTitle{
+            font-weight: 300;
+    
+        }
+        .pricingItemPrice{
+            font-weight: 400;
+            .priceDescriptor{
+                font-weight: 300;
+                color: $text-secondary;
+                font-size: 16px;
+            }
+        }
+        .pricingItemDescription{
+            font-weight: 300;
+            color: $text-secondary;
+        }
+    }
+    flex: 1 0 250px;
+    max-width: 350px;
+    // min-height: 80vh;
+    max-height: 700px;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    background: rgba(2, 0, 28, 0.50);
+    padding: 30px;
+    margin-bottom: 50px;
+    
+    .pricingItemFeatures{
+        list-style-type: none;
+        padding-left: 0;
+        .pricingItemFeature{
+            font-weight: 300;
+            padding: 7.5px 0;
+            border-top: 1px solid #FFF;
+            &:last-of-type{
+                border-bottom: 1px solid #FFF;
+            }
+
+        }
+    }
+}
+
+.container{
+    color: white;
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding-top: 182px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    justify-content: space-evenly; 
+    .title{
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        background: linear-gradient(to right, $purple, $blue);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .circleParent{
+        position: absolute;
+        top: 182px; // same as the padding-top of .container
+        left: 0;
+        right: 0;
+        bottom: 0;
+        .backgroundCircle{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 100vh;
+            aspect-ratio: 1/1;
+            transform: translate(-50%, -50%);
+            background: conic-gradient(from 266deg at 49.94% 49.94%, rgba(255, 0, 199, 0.15) 48.06141436100006deg, rgba(0, 255, 249, 0.15) 152.54167914390564deg, rgba(158, 0, 255, 0.15) 242.05758333206177deg);
+    
+            filter: blur(104.5px);
+        }
+    }
+    .pricingMenu{
+        z-index: 3;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2vw;
+        width: 100vw;
+        min-height: 80vh;
+        // flex-wrap: wrap;
+        @media (max-width: 900px){
+            flex-direction: column;
+            align-items: center;
+            }  
+    }
+}
