@@ -1,0 +1,149 @@
+@import "@/styles/variables.scss";
+
+.offerItem{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex: 1 0 calc(30% - 150px);
+    min-width: 405px;
+    max-width: 405px;
+    // margin: 50px;
+    gap: 3vh;
+    align-items: center;
+    .offerInfo{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .offerTitle{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 24px;
+            font-weight: 400;
+            .offerIcon{
+                height: 50px;
+                width: 50px;
+                display: flex;
+                align-items: center;
+            }
+            .offerHeader{
+                font-size: 30px;
+                line-height: 100%;
+                color: $pink;
+                width: fit-content;
+            }
+        }
+        .offerDesc{
+            text-align: start;
+            font-weight: 300;
+            line-height: 140%;
+            letter-spacing: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .offerButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:  8px 16px;
+        border: none;
+        color: white;
+        font-size: 28px;
+        background-color: $pink;
+        width: fit-content;
+        border-radius: 25px;
+        margin-top: auto;
+        svg{
+            rotate: -45deg;
+            path{
+                fill: white;
+            }
+        }
+    }
+}
+@media (max-width: 953px){
+    .offerItem{
+        flex: initial;
+        flex-direction: row;
+        min-width: 0;
+        // max-width: none;
+        width: 100%;
+        margin-bottom: 48px;
+        .offerInfo{
+            .offerTitle{
+                .offerHeader{
+                    line-height: 100%;
+                    color: $pink;
+                    width: fit-content;
+                }
+            }
+            .offerDesc{
+                font-weight: 200;   
+            }
+        }
+        .offerButton{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding:  8px 16px;
+            border: none;
+            color: white;
+            font-size: 28px;
+            background-color: $pink;
+            width: fit-content;
+            border-radius: 25px;
+            margin-top: auto;
+            svg{
+                rotate: -45deg;
+                path{
+                    fill: white;
+                }
+            }
+            max-width: 50px;
+            margin-top: 0;
+            aspect-ratio: 1;
+            height: auto;
+            border-radius: 100%;
+            .buttonText{
+                display: none;
+            }          
+        }
+    }
+}
+    // .offerSection{
+    //     .offers{
+    //         .heading{
+    //             font-size: 10vw;
+    //         }
+    //     }
+    // }
+    // .offerItem{
+    //     flex-direction: row;
+    //     width: 100%;
+    //     min-width: none;
+    //     .offerIcon{
+    //         align-self: start;
+    //     }
+    //     .offerText{
+    //         .offerTitle{
+    //             text-align: start;
+    //             font-size: 40px;
+    //         }
+    //         .offerDesc{
+    //             text-align: start;
+    //         }
+    //     }
+    //     .offerButton{
+    //         max-width: 50px;
+    //         margin-top: 0;
+    //         aspect-ratio: 1;
+    //         height: auto;
+    //         border-radius: 100%;
+    //         .buttonText{
+    //             display: none;
+    //         }
+    //     }
+    // }
+

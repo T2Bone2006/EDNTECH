@@ -3,6 +3,7 @@ import styles from "./Offers.module.scss";
 import OfferTop from "@/public/svgs/Vectoroffertop.svg";
 import OfferBottom from "@/public/svgs/Vectorofferbottom.svg";
 import OffersData from "./offers.json";
+import OfferItem from "@/components/Offer/OfferItem";
 
 import Price from "@/public/icons/price.svg"
 import SEO from "@/public/icons/seo.svg"
@@ -13,11 +14,8 @@ import CopyWrite from "@/public/icons/write.svg"
 import Arrow from "@/public/icons/arrow.svg"
 
 
-interface OffersInterface {
-    icon: React.ReactElement;
-    title: string;
-    desc: string;
-}
+
+
 
 const iconMapping : { [key: string]: React.ReactElement } = {
     Price: <Price />,
@@ -28,25 +26,6 @@ const iconMapping : { [key: string]: React.ReactElement } = {
     CopyWrite: <CopyWrite />,
     Arrow: <Arrow />
 };
-
-const OfferItem = ({icon, title, desc}:OffersInterface) => {
-    return(
-        <div className={styles.offerItem}>
-            <div className={styles.offerIcon}>
-                {icon}
-            </div>
-            <div className={styles.offerText}>
-                <div className={styles.offerTitle}>
-                    {title}
-                </div>
-                <div className={styles.offerDesc}>
-                    {desc}
-                </div>
-            </div>
-            <button className={styles.offerButton}><span className={styles.buttonText}>Learn More</span><Arrow /></button>
-        </div>
-    )
-}
 
 const Offers = () => {
   return (

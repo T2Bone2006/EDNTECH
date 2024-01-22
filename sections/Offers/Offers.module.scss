@@ -1,72 +1,16 @@
 @import "@/styles/variables.scss";
 
-.offerItem{
-    .offerIcon{
-        height: 50px;
-        width: 50px;
-    }
-    color: white;
-    // width: 20vw;
-    // aspect-ratio: 1;
-    // min-width: 331px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3vh;
-    justify-content: space-between;
-    .offerButton{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding:  8px 16px;
-        border: none;
-        color: white;
-        font-size: 28px;
-        background-color: $pink;
-        width: fit-content;
-        border-radius: 25px;
-        svg{
-            rotate: -45deg;
-            path{
-                fill: white;
-            }
-        }
-    }
-    .offerText{
-        display: flex;
-        flex-direction: column;
-        gap: 48px;
-        justify-content: space-between;
-        .offerTitle{
-            color: $pink;
-            // text-shadow:0px 0px 10px $pink;
-            font-size: 30px;
-        }
-        .offerDesc{
-            text-align: start;
-            font-weight: 300;
-            line-height: 140%;
-            letter-spacing: 2%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            // gap: 5vw;
-        }
-    }
-    
-}
 
 .offerSection{
     padding-bottom: 100px;
     position: relative;
     background-color: $deep-blue;
     .offerTop,.offerBottom{
-        display: inline-block;
+        // display: block;
         overflow: auto;
         // svg{
         //     width: 100vw;
-        
+        // }
         position: absolute;
         // bottom: 100%;
         background-color: transparent;
@@ -78,9 +22,10 @@
         top: 100%;
     }
     .offers{
-        padding: 0 5%;
+        
         padding-top: 48px;
         display: flex;
+        width: 100%;
         flex-direction: column;
         align-items: center;
             .heading{
@@ -95,69 +40,39 @@
         }
         .offerMenu{
             width: fit-content;
+            margin: 24px;
             margin-top: 96px;
-            // display: flex;
-            // flex-wrap: wrap;
-            // justify-content: center;
+            // display: grid;
             // gap: 100px;
-            display: grid;
-            gap: 100px;
-            grid-template-columns: repeat(auto-fit, minmax( 331px, 1fr));
-            
+            // grid-template-columns: repeat(auto-fit, minmax( 350px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10vw;
         }
     }
 }
 
-@media (max-width: 1024px){
-    .offerSection{
+// @media (max-width: 1024px){
+//     .offerSection{
 
-        .offerTop{
-            display: none;
-        }
-        .offerBottom{
-            display: none;
-        }
-        .offers{
-            .headingDiv{
-                .heading{
-                    font-size: 48px;
-                }
-            }
-        }
-    }
-    .offerItem{
-        min-width: none;
-    }
-}
-@media (max-width: 845px){
-    .offerSection{
-        .offers{
-            .heading{
-                font-size: 10vw;
-            }
-        }
-    }
-    .offerItem{
-        flex-direction: row;
-        width: 100%;
-        min-width: none;
-        .offerText{
-            .offerTitle{
-                text-align: start;
-                font-size: 8vw;
-            }
-            .offerDesc{
-                text-align: start;
-            }
-        }
-        .offerButton{
-            max-width: 50px;
-            .buttonText{
-                display: none;
-            }
-            aspect-ratio: 1;
-            height: auto;
-            border-radius: 100%;
-        }
-    }
-}
+//         .offerTop{
+//             display: none;
+//         }
+//         .offerBottom{
+//             display: none;
+//         }
+//         .offers{
+//             .headingDiv{
+//                 .heading{
+//                     font-size: 48px;
+//                 }
+//             }
+//         }
+//     }
+//     .offerItem{
+//         min-width: none;
+//     }
+// }
+
+
