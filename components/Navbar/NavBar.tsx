@@ -22,10 +22,10 @@ const NavBar = () => {
     <motion.div className={styles.navBar}
     >
         <div className={styles.shadow}></div>
-        <motion.h1 className={`${styles.logo} ${audiowide.className}`}>EDNTECH</motion.h1>
+        <motion.h1 className={`${styles.logo} ${audiowide.className}`}><Link className={styles.link} href="/">EDNTECH</Link></motion.h1>
         <motion.div className={styles.links}>
-            <Link className={styles.links} href={"/"}>Web Design</Link>
-            <Link className={styles.links} href={"/"}>SMMA</Link>
+            <Link className={styles.links} href={"/offers/webdevelopment"}>Web Design</Link>
+            <Link className={styles.links} href={"/offers/smma"}>SMMA</Link>
             <Link className={styles.links} href={"/"}>Testimonials</Link>
             <Link className={`${styles.links} ${styles.getStarted}`} href={"/"}>Get started</Link>
         </motion.div>

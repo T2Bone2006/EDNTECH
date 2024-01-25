@@ -1,5 +1,7 @@
 @import "@/styles/variables.scss";
-
+.link{
+    text-decoration: none;
+}
 .offerItem{
     display: flex;
     flex-direction: column;
@@ -10,6 +12,7 @@
     // margin: 50px;
     gap: 3vh;
     align-items: center;
+    text-decoration: none;
     .offerInfo{
         display: flex;
         flex-direction: column;

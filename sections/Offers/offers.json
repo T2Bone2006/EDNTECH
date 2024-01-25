@@ -2,31 +2,37 @@
     {
         "icon": "WebDev",
         "title": "Web Development",
-        "desc": "Elevate your digital footprint with our top-tier web development services. We excel in crafting visually compelling and functionally seamless websites that leave an indelible mark on your visitors."
+        "desc": "Elevate your digital footprint with our top-tier web development services. We excel in crafting visually compelling and functionally seamless websites that leave an indelible mark on your visitors.",
+        "link": "/offers/webdevelopment"
     },
     {
         "icon": "SMMA",
         "title": "Social Media Marketing",
-        "desc": "Amplify your brand's resonance with our precision-targeted social media marketing strategies, including meticulously planned paid ad campaigns. We enhance your online persona to captivate and engage your target audience effectively."
+        "desc": "Amplify your brand's resonance with our precision-targeted social media marketing strategies, including meticulously planned paid ad campaigns. We enhance your online persona to captivate and engage your target audience effectively.",
+        "link": "/offers/smma"
     },
     {
         "icon": "SEO",
         "title": "SEO",
-        "desc": "Supercharge your online visibility with our expert Search Engine Optimisation services. We fine-tune your digital presence to secure top search engine rankings, driving a surge in organic traffic and expanding your website's reach and influence."
+        "desc": "Supercharge your online visibility with our expert Search Engine Optimisation services. We fine-tune your digital presence to secure top search engine rankings, driving a surge in organic traffic and expanding your website's reach and influence.",
+        "link": "/offers/seo"
     },
     {
         "icon": "CopyWrite",
         "title": "Copywriting",
-        "desc": "Empower your brand with our AI-enhanced copywriting services. Our seasoned team of writers crafts compelling narratives that resonate with your audience, giving your brand a distinctive voice that stands out in the digital landscape."
+        "desc": "Empower your brand with our AI-enhanced copywriting services. Our seasoned team of writers crafts compelling narratives that resonate with your audience, giving your brand a distinctive voice that stands out in the digital landscape.",
+        "link": "/offers/copywriting"
     },
     {
         "icon": "UI",
         "title": "UI Design",
-        "desc": "Transform your user experience with our innovative UI design services. We create intuitive and engaging interfaces that not only look stunning but also drive user satisfaction and loyalty."
+        "desc": "Transform your user experience with our innovative UI design services. We create intuitive and engaging interfaces that not only look stunning but also drive user satisfaction and loyalty.",
+        "link": "/offers/uidesign"
     },
     {
         "icon": "Price",
         "title": "Affordability",
-        "desc": "Experience premium digital solutions that respect your budget. Our services are designed to deliver exceptional value, offering high-quality solutions without compromising on affordability."
+        "desc": "Experience premium digital solutions that respect your budget. Our services are designed to deliver exceptional value, offering high-quality solutions without compromising on affordability.",
+        "link": "/offers/affordability"
     }
 ]

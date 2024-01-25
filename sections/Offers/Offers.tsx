@@ -35,7 +35,7 @@ const Offers = () => {
             <h1 className={styles.heading}>What we Offer</h1>
             <div className={styles.offerMenu}>
             {OffersData.map((offer) => (
-                    <OfferItem icon={iconMapping[offer.icon]} title={offer.title} desc={offer.desc} />
+                    <OfferItem link={offer.link} icon={iconMapping[offer.icon]} title={offer.title} desc={offer.desc} />
                 ))}
             </div>
         </div>
