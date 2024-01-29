@@ -6,6 +6,7 @@ import { audiowide } from "@/app/font";
 import styles from "./NavBar.module.scss"
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import Close from "@/public/icons/XCircle.svg"
 
 const NavBar = () => {
 
@@ -27,7 +28,7 @@ const NavBar = () => {
             <Link className={styles.links} href={"/offers/webdevelopment"}>Web Design</Link>
             <Link className={styles.links} href={"/offers/smma"}>SMMA</Link>
             <Link className={styles.links} href={"/"}>Testimonials</Link>
-            <Link className={`${styles.links} ${styles.getStarted}`} href={"/"}>Get started</Link>
+            <Link className={`${styles.links} ${styles.getStarted}`} href={"/contact"}>Get started</Link>
         </motion.div>
         <motion.div className={styles.burgerMenu} onClick={toggleMenu}><BurgerMenu /></motion.div>
         <AnimatePresence>
@@ -39,12 +40,12 @@ const NavBar = () => {
                         exit={{ x: '100%' }}
                         transition={{ duration: 0.2}}
                     >
-                        <div className={styles.closeButton} onClick={toggleMenu}>X</div>
+                        <div className={styles.closeButton}><Close className={styles.close}  onClick={toggleMenu}/></div>
                         <div className={styles.menuList}>
-                            <div className={styles.menuItem}>Home</div>
-                            <div className={styles.menuItem}>SMMA</div>
-                            <div className={styles.menuItem}>Web Design</div>
-                            <div className={styles.menuItem}>Item 3</div>
+                            <Link href="/" className={styles.menuItem}>Home</Link>
+                            <Link href="/offers/smma" className={styles.menuItem}>SMMA</Link>
+                            <Link href="/offers/webdevelopment" className={styles.menuItem}>Web Design</Link>
+                            <Link href="/contact" className={styles.menuItem}>Get Started</Link>
                         </div>
                     </motion.div>
                 )

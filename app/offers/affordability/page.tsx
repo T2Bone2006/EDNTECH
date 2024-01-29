@@ -13,18 +13,24 @@ interface GridItemProps {
     svg: React.ReactNode;
     label?: string;
     next?: boolean;
+    desc?: string;
 }
 
 
 
-const GridItem = ({ svg, label, next }: GridItemProps) => {
+const GridItem = ({ svg, label, next, desc }: GridItemProps) => {
     return(
         <div className={`${styles.gridItem} ${next ? styles.next : ''}`}>
-            <div className={styles.svg}>
-                {svg}
+            <div className={styles.gridItemIcon}>
+                <div className={styles.svg}>
+                    {svg}
+                </div>
+                <div className={styles.label}>
+                    {label}
+                </div>
             </div>
-            <div className={styles.label}>
-                {label}
+            <div className={styles.gridItemDesc}>
+                {desc}
             </div>
         </div>
     )
@@ -39,15 +45,15 @@ const page = () => {
         </p>
         <h1>The Process</h1>
         <div className={styles.grid}> 
-            <GridItem svg={<Bulb/>} label="Understand"/>
+            <GridItem svg={<Bulb/>} label="Understand" desc="I start by understanding your brand, your goals, and your target audience to create a strategic plan."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Deal/>} label="Deal"/>
+            <GridItem svg={<Deal/>} label="Payment" desc="Upon agreement of terms, I ensure a smooth and secure payment process."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Deliver/>} label="Deliver"/>
+            <GridItem svg={<Deliver/>} label="Service Delivery" desc="I deliver the agreed-upon services, ensuring they meet your expectations and adhere to the highest standards."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Monitor/>} label="Grow"/>
+            <GridItem svg={<Monitor/>} label="Grow" desc="I monitor the performance and make necessary adjustments to ensure growth and achieve your business goals."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Improve/>} label="We Improve"/>
+            <GridItem svg={<Improve/>} label="We Improve" desc="I continuously seek ways to improve and optimize the strategies and designs to ensure optimal results."/>
         </div>
     </div>
   )

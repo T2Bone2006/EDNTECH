@@ -12,32 +12,29 @@ interface GridItemProps {
     svg: React.ReactNode;
     label?: string;
     next?: boolean;
+    desc?: string;
 }
 
-const items = [
-    { svg: <Next/>, next: true },
-    { svg: <Bulb/>, label: 'Design' },
-    { svg: <Design/>, label: 'Building' },
-    { svg: <Code/>, label: 'Building' },
-    { svg: <Launch/>, label: 'Building' },
-    { svg: <Bug/>, label: 'Building' },
-    { svg: <Update/>, label: 'Building' },
-    // Add more items here...
-];
 
 
-const GridItem = ({ svg, label, next }: GridItemProps) => {
+const GridItem = ({ svg, label, next, desc }: GridItemProps) => {
     return(
         <div className={`${styles.gridItem} ${next ? styles.next : ''}`}>
-            <div className={styles.svg}>
-                {svg}
+            <div className={styles.gridItemIcon}>
+                <div className={styles.svg}>
+                    {svg}
+                </div>
+                <div className={styles.label}>
+                    {label}
+                </div>
             </div>
-            <div className={styles.label}>
-                {label}
+            <div className={styles.gridItemDesc}>
+                {desc}
             </div>
         </div>
     )
 }
+
 
 const page = () => {
   return (
@@ -52,17 +49,17 @@ const page = () => {
         </p>
         <h1>The Process</h1>
         <div className={styles.grid}> 
-            <GridItem svg={<Bulb/>} label="Understand"/>
+            <GridItem svg={<Bulb/>} label="Understand" desc="I start by getting to know your business, your goals, and your target audience to create a strategic plan."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Design/>} label="Design"/>
+            <GridItem svg={<Design/>} label="Design" desc="I create visually stunning and user-friendly designs tailored to your brand and audience."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Code/>} label="Build"/>
+            <GridItem svg={<Code/>} label="Build" desc="I bring the designs to life, building a functional and responsive website."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Bug/>} label="Bug Fixing"/>
+            <GridItem svg={<Bug/>} label="Fixing" desc="I thoroughly test the website, fixing any bugs and ensuring optimal performance across all devices."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Launch/>} label="Launch"/>
+            <GridItem svg={<Launch/>} label="Launch" desc="Once everything is perfect, I launch your website, making it live for the world to see."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Update/>} label="Maintenance"/>
+            <GridItem svg={<Update/>} label="Maintenance" desc="I provide ongoing maintenance and updates to keep your website running smoothly and securely."/>
         </div>
     </div>
   )

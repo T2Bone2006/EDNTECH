@@ -14,22 +14,29 @@ interface GridItemProps {
     svg: React.ReactNode;
     label?: string;
     next?: boolean;
+    desc?: string;
 }
 
 
 
-const GridItem = ({ svg, label, next }: GridItemProps) => {
+const GridItem = ({ svg, label, next, desc }: GridItemProps) => {
     return(
         <div className={`${styles.gridItem} ${next ? styles.next : ''}`}>
-            <div className={styles.svg}>
-                {svg}
+            <div className={styles.gridItemIcon}>
+                <div className={styles.svg}>
+                    {svg}
+                </div>
+                <div className={styles.label}>
+                    {label}
+                </div>
             </div>
-            <div className={styles.label}>
-                {label}
+            <div className={styles.gridItemDesc}>
+                {desc}
             </div>
         </div>
     )
 }
+
 
 const page = () => {
   return (
@@ -40,15 +47,15 @@ const page = () => {
         </p>
         <h1>The Process</h1>
         <div className={styles.grid}> 
-            <GridItem svg={<Goal/>} label="Goal"/>
+            <GridItem svg={<Goal/>} label="Goal" desc="I initiate the process by establishing clear, measurable goals that align with your business objectives and audience needs."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Strategy/>} label="Strategy"/>
+            <GridItem svg={<Strategy/>} label="Strategy" desc="I devise a comprehensive content strategy, customized to your brand and audience, to convey your message effectively."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Write/>} label="Write"/>
+            <GridItem svg={<Write/>} label="Write" desc="I create captivating narratives, tailored to your brand's unique identity and values."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<AI/>} label="AI Powered"/>
+            <GridItem svg={<AI/>} label="AI Powered" desc="Utilizing advanced AI technology, I optimize your content for maximum impact and engagement."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Checklist/>} label="Complete"/>
+            <GridItem svg={<Checklist/>} label="Complete" desc="Upon completion, I deliver top-notch, AI-enhanced content that strengthens your brand and resonates with your audience."/>
         </div>
     </div>
   )

@@ -1,7 +1,7 @@
 [
     {
       "title": "Essential",
-      "price": "£150",
+      "price": "£200",
       "description": "Our Essential package is an ideal starting point for businesses making their first foray into the digital world. It includes all the fundamental features needed to establish a solid online presence.",
       "features": [
         "Professionally designed website",
@@ -33,11 +33,10 @@
             "Includes Everything in the Deluxe Package",
             "Priority Support",
             "Backend Functionalities",
-            "Custom Content Management System (CMS)",
-            "Premium SEO Optimisation",
+            "Personalized Web Admin Panel (Effortlessly make updates to your website on your own!)",
             "Advanced Analytics and Reporting",
-            "Unlimited Custom Pages",
-            "Custom Contact Form"
+            "Custom Contact Form",
+            "Unlimited Custom Pages"
         ]
     }
 ]

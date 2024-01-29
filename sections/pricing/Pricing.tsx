@@ -11,7 +11,7 @@ interface PricingItemProps {
 
 const PricingItem: React.FC<PricingItemProps> = ({ title, price, description, features }) => {
   return (
-    <div className={styles.pricingItem}>
+    <div id="pricingSection" className={styles.pricingItem}>
         <div className={styles.pricingUpper}>
             <h1 className={styles.pricingItemTitle}>{title}</h1>
             <h2 className={styles.pricingItemPrice}>{price}<span className={styles.priceDescriptor}> per month</span></h2>

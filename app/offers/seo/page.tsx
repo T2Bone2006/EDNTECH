@@ -13,22 +13,29 @@ interface GridItemProps {
     svg: React.ReactNode;
     label?: string;
     next?: boolean;
+    desc?: string;
 }
 
 
 
-const GridItem = ({ svg, label, next }: GridItemProps) => {
+const GridItem = ({ svg, label, next, desc }: GridItemProps) => {
     return(
         <div className={`${styles.gridItem} ${next ? styles.next : ''}`}>
-            <div className={styles.svg}>
-                {svg}
+            <div className={styles.gridItemIcon}>
+                <div className={styles.svg}>
+                    {svg}
+                </div>
+                <div className={styles.label}>
+                    {label}
+                </div>
             </div>
-            <div className={styles.label}>
-                {label}
+            <div className={styles.gridItemDesc}>
+                {desc}
             </div>
         </div>
     )
 }
+
 
 const page = () => {
   return (
@@ -39,15 +46,15 @@ const page = () => {
         </p>
         <h1>The Process</h1>
         <div className={styles.grid}> 
-            <GridItem svg={<Find/>} label="Audit"/>
+            <GridItem svg={<Find/>} label="Audit" desc="I start by conducting a thorough audit of your current SEO status to identify areas of improvement."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Goal/>} label="Set Targets"/>
+            <GridItem svg={<Goal/>} label="Set Targets" desc="I set clear, measurable targets based on your business objectives and SEO audit results."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Optimise/>} label="Optimise"/>
+            <GridItem svg={<Optimise/>} label="Optimise" desc="I optimize your website's content and metadata to align with search engine algorithms, driving a surge in organic traffic."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Like/>} label="Reputation"/>
+            <GridItem svg={<Like/>} label="Reputation" desc="I work on improving your website's reputation and credibility through high-quality backlinks and positive user experiences."/>
             <GridItem svg={<Next/>}next={true}/>
-            <GridItem svg={<Monitor/>} label="Monitor"/>
+            <GridItem svg={<Monitor/>} label="Monitor" desc="I continuously monitor SEO performance and make necessary adjustments to ensure optimal results and business growth."/>
         </div>
     </div>
   )

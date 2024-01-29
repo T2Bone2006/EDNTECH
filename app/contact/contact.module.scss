@@ -1,0 +1,28 @@
+@import "@/styles/variables.scss";
+
+.contact{
+    padding: 5%;
+    position: relative;
+    .title{
+        width: fit-content;
+        background: $pink-purple;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .subTitle{
+        width: fit-content;
+        background: $lightblue-blue;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .text{
+        color: white;
+        .title{
+            width: fit-content;
+            background: $lightblue-blue;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+        }
+    }
+}

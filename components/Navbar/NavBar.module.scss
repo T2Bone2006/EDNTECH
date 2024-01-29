@@ -56,6 +56,7 @@
         }
     }
     .mobileMenu{
+        box-sizing: border-box;
         height: 100vh;
         max-height: 100vh;
         width: 100vw;
@@ -66,8 +67,27 @@
         background: $deep-blue;
         padding: 10vh 10vw;
         .closeButton{
-            width: 100%;
-
+            overflow: hidden;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            .close{
+                svg{
+                    path{
+                        fill: white;
+                    }
+                }
+            }
+        }
+        .menuList{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .menuItem{
+                text-decoration: none;
+                color: white;
+                font-size: 24px;
+            }
         }
     }
 }
