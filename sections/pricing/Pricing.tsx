@@ -38,6 +38,7 @@ const Pricing = () => {
             <PricingItem key={index} {...item} />
           )}
       </div>
+      <button className={styles.button}>Get Started</button>
     </section>
   )
 }

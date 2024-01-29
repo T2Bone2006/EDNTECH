@@ -60,6 +60,19 @@
     flex-direction: column;
     // flex-wrap: wrap;
     justify-content: space-evenly; 
+    align-items: center;
+    .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:  8px 16px;
+        border: none;
+        color: white;
+        font-size: 28px;
+        background-color: $pink;
+        width: fit-content;
+        border-radius: 25px;
+    }
     .title{
         width: 100%;
         text-align: center;

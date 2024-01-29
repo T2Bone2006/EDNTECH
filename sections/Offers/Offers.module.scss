@@ -4,6 +4,10 @@
 .offerSection{
     position: relative;
     background-color: $deep-blue;
+    margin-bottom: 180px;
+    @media(max-width: 1024px){
+        margin-bottom: 0;
+    }
     .offerTop,.offerBottom{
         // display: block;
         overflow: auto;
