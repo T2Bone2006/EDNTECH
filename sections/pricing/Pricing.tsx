@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "./Pricing.module.scss"
 import pricingData from "./pricingData.json"
+import Link from "next/link";
 
 interface PricingItemProps {
   title: string;
@@ -38,7 +39,7 @@ const Pricing = () => {
             <PricingItem key={index} {...item} />
           )}
       </div>
-      <button className={styles.button}>Get Started</button>
+      <Link className={styles.link} href="/contact"><button className={styles.button}>Get Started</button></Link>
     </section>
   )
 }
