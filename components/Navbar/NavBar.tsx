@@ -27,7 +27,7 @@ const NavBar = () => {
         <motion.div className={styles.links}>
             <Link className={styles.links} href={"/offers/webdevelopment"}>Web Design</Link>
             <Link className={styles.links} href={"/offers/smma"}>SMMA</Link>
-            <Link className={styles.links} href={"/"}>Testimonials</Link>
+            {/* <Link className={styles.links} href={"/"}>Testimonials</Link> */}
             <Link className={`${styles.links} ${styles.getStarted}`} href={"/contact"}>Get started</Link>
         </motion.div>
         <motion.div className={styles.burgerMenu} onClick={toggleMenu}><BurgerMenu /></motion.div>
