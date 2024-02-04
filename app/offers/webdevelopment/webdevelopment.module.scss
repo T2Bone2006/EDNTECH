@@ -79,9 +79,11 @@
                     background: $lightblue-blue;
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
-                    font-size: 100%;
+                    font-size: 24px;
                     @media(max-width: 1024px){
-                        display: none;
+                        width: 100%;
+                        height: auto;
+                        text-align: center;
                     }
                 }
             }

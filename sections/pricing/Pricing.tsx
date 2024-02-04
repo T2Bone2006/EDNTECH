@@ -39,7 +39,7 @@ const Pricing = () => {
             <PricingItem key={index} {...item} />
           )}
       </div>
-      <Link className={styles.link} href="/contact"><button className={styles.button}>Get Started</button></Link>
+      <Link className={styles.link} href="/contact"><button aria-label="Get Started" className={styles.button}>Get Started</button></Link>
     </section>
   )
 }

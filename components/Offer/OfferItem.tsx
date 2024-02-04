@@ -22,7 +22,7 @@ const OfferItem = ({icon, title, desc, link}:OffersInterface) => {
                         {desc}
                     </div>
                 </div>
-                <button className={styles.offerButton}><span className={styles.buttonText}>Learn More</span><Arrow /></button>
+                <button aria-label="Learn More" className={styles.offerButton}><span className={styles.buttonText}>Learn More</span><Arrow /></button>
             </div>
         </Link>
     )
