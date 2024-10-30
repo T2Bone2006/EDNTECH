@@ -42,10 +42,10 @@ const NavBar = () => {
                     >
                         <div className={styles.closeButton}><Close className={styles.close}  onClick={toggleMenu}/></div>
                         <div className={styles.menuList}>
-                            <Link href="/" className={styles.menuItem}>Home</Link>
-                            <Link href="/offers/smma" className={styles.menuItem}>SMMA</Link>
-                            <Link href="/offers/webdevelopment" className={styles.menuItem}>Web Design</Link>
-                            <Link href="/contact" className={styles.menuItem}>Get Started</Link>
+                            <Link onClick={() => setIsVisible(false)} href="/" className={styles.menuItem}>Home</Link>
+                            <Link onClick={() => setIsVisible(false)} href="/offers/smma" className={styles.menuItem}>SMMA</Link>
+                            <Link onClick={() => setIsVisible(false)} href="/offers/webdevelopment" className={styles.menuItem}>Web Design</Link>
+                            <Link onClick={() => setIsVisible(false)} href="/contact" className={styles.menuItem}>Get Started</Link>
                         </div>
                     </motion.div>
                 )
